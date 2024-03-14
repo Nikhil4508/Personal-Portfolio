@@ -1,0 +1,1323 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Signika+Negative:wght@300..700&display=swap');
+
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/The\ Lost\ Dungeon.woff2);
+}
+
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 125px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Madimi One;
+}
+
+body{
+    background: #cfe1b9;
+}
+
+header{
+    width: 1350px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #516337;
+    border-radius: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/***** header section ka left part start here *****/
+
+.header-title{
+    color: #fff;
+    font-family: Signika Negative;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+/***** header section ka left part end here *****/
+
+
+/***** header section ka right part start here *****/
+nav{
+    margin-right: 0.4rem;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+nav ul li{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+nav ul li a{
+    color: #fff;
+}
+.home{
+    font-weight: 600;
+    padding:15px 20px;
+    background: #000;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+.home:hover{
+    color: #000;
+    background-color: #cfe1b9;
+}
+.project{
+    font-weight: 600;
+    padding: 15px 20px;
+    background: #000;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+.project:hover{
+    color: #000;
+    background-color: #cfe1b9;
+}
+.skill{
+    font-weight: 600;
+    padding: 15px 20px;
+    background: #000;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+.skill:hover{
+    color: #000;
+    background-color: #cfe1b9;
+}
+.about{
+    font-weight: 600;
+    padding: 15px 20px;
+    background: #000;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+.about:hover{
+    color: #000;
+    background-color: #cfe1b9;
+}
+.contact{
+    font-weight: 600;
+    padding: 15px 20px;
+    background: #000;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+.contact:hover{
+    color: #000;
+    background-color: #cfe1b9;
+}
+
+.menu_open_button{
+    display:none;
+}
+/* hambuger menu design */
+.sidebar{
+    padding: 1rem;
+    position: absolute;
+    top: 80px;
+    right: 1.6rem;
+    width: 300px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #516337;
+    backdrop-filter: blur(20px);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition:height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.sidebar li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar li a:hover{
+   border-bottom: 1px solid black;
+    padding: 0.5rem;
+}
+
+/***** header section ka right part end here *****/
+
+
+/*********************************
+    header section end here
+*********************************/
+
+
+
+
+/*********************************
+    hero section start here
+*********************************/
+
+.hero_section{
+    width:1350px ;
+    height: 78vh;
+    display: flex;
+    margin: 3rem auto;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/***** hero section ka left part start here *****/
+.hero_title{
+    width: 56%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0rem 1rem;
+    padding: 1rem;
+}
+.hero_text{
+    position: relative;
+    font-size: 4rem;
+   width:max-content;
+}
+
+.hero_subtext{
+    font-size: 3.5rem;
+}
+.hero_para{
+    margin-top:0.5rem;
+}
+.hero_button{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.linkedin_btn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    background-color: #6f936c;
+    z-index: 1;
+    position: relative;
+    transition: 0.5s ;
+    overflow: hidden;
+    cursor: pointer;
+}
+.linkedin_btn img{
+    width: 30px;
+    height: 30px;
+}
+.linkedin_btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#cfe1b9;
+    z-index: -1;
+    transition: transform 0.5s ease;
+    transform-origin: left;
+    transform: scaleX(1);
+    border-radius: 20px;
+}
+.linkedin_btn:hover::before{
+    transform-origin: right;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+    
+}
+.linkedin_btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.github_btn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    background-color: #6f936c;
+    z-index: 1;
+    position: relative;
+    transition: 0.5s ;
+    overflow: hidden;
+    cursor: pointer;
+}
+.github_btn img{
+    width: 30px;
+    height: 30px;
+}
+.github_btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#cfe1b9;
+    z-index: -1;
+    transition: transform 0.5s ease;
+    transform-origin: left;
+    transform: scaleX(1);
+    border-radius: 20px;
+    
+}
+.github_btn:hover::before{
+    transform-origin: right;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+   
+}
+.github_btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.mail_btn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    background-color: #6f936c;
+    z-index: 1;
+    position: relative;
+    transition: 0.5s ;
+    overflow: hidden;
+    cursor: pointer;
+}
+.mail_btn img{
+    width: 30px;
+    height: 30px;
+}
+.mail_btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#cfe1b9;
+    z-index: -1;
+    transition: transform 0.5s ease;
+    transform-origin: left;
+    transform: scaleX(1);
+    border-radius: 20px;  
+}
+
+.mail_btn:hover::before{
+    transform-origin: right;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+   
+}
+.mail_btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/***** hero section ka left part end here *****/
+
+
+
+/***** hero section ka right part start here *****/
+
+.hero_image{
+    width: 44%;
+    margin: 1rem 1rem;
+    padding: 1rem;
+    background-color: #cfe1b9;
+    border-radius: 20px;
+}
+.hero_image img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+.hero_image:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid black;
+    
+}
+/***** hero section ka right part end here *****/
+
+/*********************************
+    hero section end here
+*********************************/
+
+
+
+/*********************************
+    project section start from here
+*********************************/
+
+.project_wrapper{
+    width: 1350px;
+    height: 93vh;
+    padding: 1rem 1rem;
+    margin: 3rem auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/***** project section ka title part starts here *****/
+.project_title{
+    display: inline-block;
+    padding: 15px 20px;
+    background: #6f936c;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.project_image_box{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+/***** project section ka title part ends here *****/
+
+
+/***** project section ka card part starts here *****/
+.project_card_wrapper{
+    width: 1315px;
+    height: 75vh;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+    margin: 1.5rem auto;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.project_card_1{
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #cfe1b9;
+    border-radius: 20px;
+}
+.card_1_image{
+    position: relative;
+    overflow: hidden;
+    height: 16rem;
+    margin-bottom: 1rem;
+}
+.card-image{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   
+}
+.card-1_title_container a{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card-1_title_container p{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+}
+#card-title{
+    font-family: myfont;
+    color: #cfe1b9;
+}
+.card-image_3{
+    width: 100%;
+    height: 100%;
+}
+.card-image_2{
+    width: 100%;
+    height: 100%;
+}
+
+/***** project section ka card part ends here *****/
+
+
+/*********************************
+    project section end here
+*********************************/
+
+
+
+/*********************************
+    skill section starts from here
+*********************************/
+
+/***** skill section ka title part starts here *****/
+
+.skill_section_wrapper{
+    width: 1350px;
+    height: 50vh;
+    padding: 1rem 1rem;
+    margin: 3rem auto;
+    background:#fff;
+    border-radius: 20px;
+}
+
+.skill_title{
+    display: inline-block;
+    padding: 15px 20px;
+    background: #6f936c;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+.skill_image_box{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/***** skill section ka title part ends here *****/
+
+
+.skill_card_wrapper{
+    width: 1315px;
+    height: 32vh;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/*********************************
+    skill section ends here
+*********************************/
+
+
+
+/*********************************
+    about section starts from here
+*********************************/
+
+/***** about section ka title part starts here *****/
+
+.about_section_wrapper{
+    width: 1350px;
+    height: 90vh;
+    padding: 1rem 1rem;
+    margin: 3rem auto;
+    background:#fff;
+    border-radius: 20px;
+}
+.about_title{
+    display: inline-block;
+    padding: 15px 20px;
+    background: #6f936c;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+.about_image_box{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.about_card_wrapper{
+    width: 1315px;
+    height: 72vh;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around; */
+}
+/***** about section ka title part ends here *****/
+
+.about_card_wrapper h1{
+    font-size: 2.2rem;
+    display: inline;
+    color: #cfe1b9;
+    background:linear-gradient(
+        to bottom,
+        transparent 90%,
+        #fce041 50%
+    );
+}
+.about_card_wrapper p{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+
+/*********************************
+    about section ends here
+*********************************/
+
+
+
+/*********************************
+    contact section starts from here
+*********************************/
+
+.contact_section_wrapper{
+    width: 1350px;
+    height: 90vh;
+    padding: 1rem 1rem;
+    margin: 3rem auto;
+    background:#fff;
+    border-radius: 20px;
+}
+
+.contact_title{
+    display: inline-block;
+    padding: 15px 20px;
+    background: #6f936c;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+.contact_image_box{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact_card_wrapper{
+    width: 1315px;
+    height: 72vh;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 9px;  
+}
+
+.contact_card_wrapper input{
+    width: 30%;
+    font-size: 1.3rem;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+.contact_card_wrapper textarea{
+    width: 30%;
+    font-size: 1.3rem;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+.contact_card_wrapper button{
+    font-size: 1.3rem;
+    padding: 15px 35px;
+    border-radius: 25px;
+    background: #cfe1b9;
+    transition:all 0.3s linear ;
+}
+.contact_card_wrapper button:hover{
+    background: #6f936c;
+}
+
+
+
+/* leftside starts from here */
+.leftside{
+    width: 60%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px; 
+}
+form{
+    width: 50%;
+}
+.contact_card_wrapper input{
+    width: 400px;
+    font-size: 1.3rem;
+    padding: 15px 20px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+}
+.contact_card_wrapper textarea{
+    width: 400px;
+    font-size: 1.3rem;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+.contact_card_wrapper button{
+    font-size: 1.3rem;
+    padding: 15px 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    background: #cfe1b9;
+    transition:all 0.3s linear ;
+}
+.contact_card_wrapper button:hover{
+    background: #6f936c;
+}
+/* leftside ends here */
+
+
+
+/* rightside starts from here */
+.rightside{
+    width: 40%;
+    height: 55vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+}
+.rightside h1{
+    color: #fff;
+}
+.social_link  a{
+    color: #fff;
+    padding: 0.5rem;
+}
+.social_link a img:hover{
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color: #353534d8;
+}
+/* rightside ends here */
+
+/*********************************
+    contact section ends here
+*********************************/
+
+
+
+/*********************************
+   Media Query starts from here
+*********************************/
+@media (max-width:1024px) and (min-width:768px) {
+
+    header{
+        width: 90%;
+        height: 50%;
+        margin: 2vw auto;
+    }
+    .header-title{
+        font-size: 6vw;
+    }
+    nav ul li {
+        display: none;
+    }
+    .sidebar{
+        top: 90px;
+    }
+    .menu_open_button{
+        display: block;
+    }
+
+    .hero_section{
+        width: 90%;
+        height: 50%;
+    }
+
+    .hero_text{
+        font-size: 6.9vw;
+    }
+    .hero_subtext{
+        font-size: 5vw;
+    }
+    .hero_para{
+         font-weight: 400;
+        font-size: 3vw;
+    }
+    
+
+    .linkedin_btn{
+        padding: 15px 20px;
+        font-size:1.9vw;
+        border-radius:10px;
+    }
+    .linkedin_btn img{
+        width: 20px;
+        height: 20px;
+    }
+    .linkedin_btn::before{
+        border-radius: 10px;
+    }
+
+    .github_btn{
+        padding: 15px 20px;
+        font-size:1.9vw;
+        border-radius:10px;
+    }
+    .github_btn img{
+        width: 20px;
+        height: 20px;
+    }
+    .github_btn::before{
+        border-radius: 10px;
+    }
+
+    .mail_btn{
+        padding: 15px 20px;
+        font-size:1.9vw;
+        border-radius:10px;
+    }
+    .mail_btn img{
+        width: 20px;
+        height: 20px;
+    }
+    .mail_btn::before{
+        border-radius: 10px;
+    }
+
+
+
+    .project_wrapper{
+        width: 90%;
+        height: 50%;
+    }
+
+    .project_title{
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+
+    .project_card_wrapper{
+        width: 95%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        border-radius: 10px;
+    }
+
+    .project_card_1{
+        width:100%;
+        border-radius: 10px;
+    }
+    .card-title{
+        font-size: 5vw;
+    }
+    .card-1_title_container p{
+        font-size: 3vw;
+    }
+
+    .project_card_2{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .project_card_2 img{
+        border-radius: 10px;
+    }
+
+    .project_card_3{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .project_card_3 img{
+        border-radius: 10px;
+    }
+
+
+
+    .skill_section_wrapper{
+        width: 90%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    .skill_title{
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+    .skill_card_wrapper{
+        width: 95%;
+        height: 50%;
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+        row-gap:10px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    #box img{
+        width: 70px;
+        height: 70px;
+    }
+
+
+
+    .about_section_wrapper{
+        width: 90%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    .about_title{
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+    .about_card_wrapper{
+        width: 95%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    
+    .about_card_wrapper h1{
+        font-size: 6vw;
+    }
+    .about_card_wrapper p{
+        font-size: 4.5vw;
+    }
+
+
+
+    .contact_section_wrapper{
+        width: 95%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    
+    .contact_title{
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+    .contact_card_wrapper{
+        width: 95%;
+        height: 50%;
+        border-radius: 10px;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        gap: 9px;  
+    }
+    .leftside{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 9px; 
+    }
+    .contact_card_wrapper input{
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 15px 20px;
+        border-radius: 25px;
+        border: none;
+    }
+    .contact_card_wrapper textarea{
+        width: 100%;
+        font-size: 1.3rem;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 25px;
+    }
+    .rightside{
+        width: 95%;
+        margin-top: 3rem;
+        /* display: flex;
+        align-items: center;
+        justify-content:center; */
+        gap: 10px;
+    }
+
+}
+
+
+/* Mobile media query */
+@media (max-width:767px) and (min-width:340px) {
+    header{
+        width: 94%;
+        height: 50%;
+        margin: 2vw auto;
+        border-radius: 10px;
+    }
+    .header-title{
+        font-size: 6vw;
+    }
+    nav ul li {
+        display: none;
+    }
+    .sidebar{
+        top: 65px;
+    }
+    .menu_open_button{
+        display: block;
+    }
+
+
+    .hero_section{
+        width: 94%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .hero_title{
+        width: 92%;
+        height: 50%;
+    }
+
+    .hero_text{
+        font-size: 9.5vw;
+    }
+    .hero_subtext{
+        font-size: 7vw;
+    }
+    .hero_para{
+        font-weight: 400;
+        font-size: 5vw;
+    }
+
+    .hero_button{
+        margin-top: 1.2rem;
+    }
+
+    .linkedin_btn{
+        gap: 5px;
+        padding: 15px 20px;
+        font-size:2.9vw;
+        border-radius:10px;
+    }
+    .linkedin_btn img{
+        width: 25px;
+        height: 25px;
+    }
+    .linkedin_btn::before{
+        border-radius: 10px;
+    }
+
+    .github_btn{
+        gap: 5px;
+        padding: 15px 20px;
+        font-size:2.9vw;
+        border-radius:10px;
+    }
+    .github_btn img{
+        width: 25px;
+        height: 25px;
+    }
+    .github_btn::before{
+        border-radius: 10px;
+    }
+
+    .mail_btn{
+        gap: 5px;
+        padding: 15px 20px;
+        font-size:2.9vw;
+        border-radius:10px;
+    }
+    .mail_btn img{
+        width: 25px;
+        height: 25px;
+    }
+    .mail_btn::before{
+        border-radius: 10px;
+    }
+    .hero_image{
+        width: 85%;
+        border-radius: 10px;
+    }
+
+
+    .project_wrapper{
+        width: 94%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    .project_title{
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+    .project_image_box{
+        gap: 5px;
+    }
+    .project_image_box h1{
+        font-size: 6vw;
+    }
+
+    .project_card_wrapper{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        border-radius: 10px;
+    }
+    .project_card_1{
+        width:100%;
+        border-radius: 10px;
+    }
+    .card-title{
+        font-size: 5vw;
+    }
+    .card-1_title_container p{
+        font-size: 4.5vw;
+    }
+
+    .project_card_2{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .project_card_2 img{
+        border-radius: 10px;
+    }
+
+    .project_card_3{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .project_card_3 img{
+        border-radius: 10px;
+    }
+
+
+
+    .skill_section_wrapper{
+        width: 94%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    .skill_title{
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+    .skill_image_box{
+        gap: 5px;
+    }
+    .skill_image_box h1{
+        font-size: 6vw;
+    }
+
+    .skill_card_wrapper{
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+        row-gap:10px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    #box img{
+        width: 70px;
+        height: 70px;
+    }
+
+
+
+    .about_section_wrapper{
+        width: 94%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    .about_title{
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+    .about_image_box{
+        gap: 5px;
+    }
+    .about_image_box h1{
+        font-size: 6vw;
+    }
+
+
+    .about_card_wrapper{
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    
+    .about_card_wrapper h1{
+        font-size: 6.5vw;
+    }
+    .about_card_wrapper p{
+        font-size: 4.8vw;
+    }
+
+
+
+    .contact_section_wrapper{
+        width: 94%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    
+    .contact_title{
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+    .contact_image_box{
+        gap: 5px;
+    }
+    .contact_image_box h1{
+        font-size: 6vw;
+    }
+    .contact_card_wrapper{
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        gap: 9px;  
+    }
+    .leftside{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 9px; 
+    }
+    .contact_card_wrapper input{
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 15px 20px;
+        border-radius: 10px;
+        border: none;
+    }
+    .contact_card_wrapper textarea{
+        width: 100%;
+        font-size: 1.3rem;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 10px;
+    }
+    .leftside button{
+        border-radius: 10px;
+    }
+
+
+    .rightside{
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+        gap: 5px;
+    }
+    .rightside h1{
+        font-size: 6vw;
+        margin-bottom: 1rem;
+    }
+    .social_link a img{
+        width: 25px;
+        height: 25px;
+    }
+    .social_link a img:hover{
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+}
+
+
+
+@media screen and (max-width:1400px)  and (min-width:1025px){
+
+    header{
+        width: 95%;
+    }
+
+.hero_section{
+    width:95% ;
+    height: 78vh;
+}
+
+
+.project_wrapper{
+    width: 95%;
+    height: 93vh;
+    
+}
+
+.project_card_wrapper{
+    width: 100%;
+    height: 75vh;
+    
+}
+
+
+
+.skill_section_wrapper{
+    width: 95%;
+    height: 50vh;
+   
+}
+
+.skill_card_wrapper{
+    width: 100%;
+    height: 32vh;
+   
+}
+
+.about_section_wrapper{
+    width: 95%;
+    height: 90vh;
+    
+}
+
+.about_card_wrapper{
+    width: 100%;
+    height: 72vh;
+  
+}
+
+
+.contact_section_wrapper{
+    width: 95%;
+    height: 90vh;
+   
+}
+.contact_card_wrapper{
+    width: 100%;
+    height: 72vh;
+   
+}
+
+
+}
